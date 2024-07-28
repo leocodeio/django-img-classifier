@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #6a3093, #7f7fd5);
+  font-family: Arial, sans-serif; /* Adding a fallback font */
+}
+
+.card-wrapper {
+  margin: 5% auto; /* Centering the card-wrapper */
+  max-width: 400px; /* Adding a maximum width for better responsiveness */
+}
+
+/* Adjusting the image size */
+.custom-circle-image {
+  margin-top: 10px; /* Changed margin-top from 10% to 10px for better positioning */
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  border-radius: 50%; /* Making the image round */
+  overflow: hidden; /* Hiding overflow for rounded image */
+}
+
+.custom-circle-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-title {
+  letter-spacing: 1.1px;
+  font-size: 18px; /* Increasing font size for better readability */
+}
+
+.card-text {
+  font-family: 'Merriweather', serif; /* Corrected font-family */
+  font-size: 14px; /* Adjust as needed */
+  line-height: 1.5; /* Improved line-height for better readability */
+}
+
+.dropzone {
+  border: 2px dashed #ccc; /* Changed border-style to border */
+  padding: 20px; /* Added padding for better appearance */
+  text-align: center; /* Centering text */
+  margin-bottom: 20px; /* Added margin for spacing */
+}
+
+.error {
+  visibility: hidden;
+  color: red; /* Changing color of error text */
+  margin-top: 5px; /* Adding margin for spacing */
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto; /* Centering form */
+  border-radius: 10px; /* Adding border radius */
+}
+
+/* CSS for the file input */
+input[type="file"] {
+  border: 2px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: calc(100% - 20px); /* Adjusting width for padding */
+}
+
+/* CSS for the submit button */
+button[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Adding margin for spacing */
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* Darker green color */
+}

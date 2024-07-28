@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classification Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(to right, #6a3093, #7f7fd5);
+            font-family: Arial, sans-serif; /* Adding a fallback font */
+        }
+
+        .container {
+            margin-top: 5%;
+        }
+
+        .table {
+            background-color: #fff; /* Adding a background color */
+            border-radius: 10px; /* Adding border radius */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adding box shadow */
+        }
+
+        th,
+        td {
+            text-align: center;
+        }
+
+        .btn-primary {
+            background-color: #4CAF50;
+            margin-top: 20px; /* Adding margin for spacing */
+            transition: background-color 0.3s; /* Adding transition effect */
+        }
+
+        .btn-primary:hover {
+            background-color: #45a049; /* Darker green color */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Probability Score</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lionel Messi</td>
+                            <td>{{ classification_result.score_lionel_messi }}</td>
+                        </tr>
+                        <tr>
+                            <td>Roger Federer</td>
+                            <td>{{ classification_result.score_roger_federer }}</td>
+                        </tr>
+                        <tr>
+                            <td>Serena Williams</td>
+                            <td>{{ classification_result.score_serena_williams }}</td>
+                        </tr>
+                        <tr>
+                            <td>Virat Kohli</td>
+                            <td>{{ classification_result.score_virat_kohli }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <a href="/" class="btn btn-primary">Back to Home</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
